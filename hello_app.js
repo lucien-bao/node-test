@@ -9,6 +9,8 @@ const port = process.env.PORT || 3000;
 http.createServer(async (req, res) => {
     const parsed = url.parse(req.url, true);
 
+    console.log(parsed.pathname);
+
     if (parsed.pathname == "/") {
         res.writeHead(200, { "Content-type": "text/html" });
         fs.readFile("form.html", (err, txt) => {
