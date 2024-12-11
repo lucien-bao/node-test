@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stock ticker form</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body>
+        <form method="GET" action="/process">
+            <label>
+                Stock ticker symbol OR Company name<br />
+                <input type="text" name="input"/>
+            </label> <br />
+
+            <br />
+
+            <label>
+                <input type="radio" name="type" value="stock"/>
+                Stock ticker symbol
+            </label> <br />
+            <label>
+                <input type="radio" name="type" value="company"/>
+                Company name
+            </label> <br />
+            
+            <br />
+
+            <input type="submit" value="Search" />
+        </form>
+    </body>
+</html>
